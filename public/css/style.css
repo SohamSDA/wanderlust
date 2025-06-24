@@ -1,0 +1,366 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  /* Navbar */
+  .navbar {
+    height: 5rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  
+  .fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+  }
+  
+  .nav-link {
+    color: #222222 !important;
+  }
+  
+  /* Footer */
+
+  /* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+  
+  .site-info {
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .socials {
+    font-size: 2rem;
+    width: 100%;
+  }
+  
+  .footcomp {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .fa-brands {
+    color: black;
+  }
+  
+ /* Card Styling */
+.listing-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Price & Location Styling */
+.list-group-item {
+  font-size: 0.9rem;
+  color: #495057;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+.list-group-item:first-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fe424d;
+}
+  
+  
+  
+  .row .col {
+    margin-bottom: 2rem; 
+  }
+  
+  .but-right{
+    text-align: right;      
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 20px auto; /* Centers the form */
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #e2e1e1; /* Subtle background */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  }
+  
+  input.form-control, textarea.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #007bff; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+button.btn {
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+button.btn:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+  border-color: #ff4d4d;
+}
+.mb-3 {
+  margin-bottom: 1.5rem; /* Adjust spacing between fields */
+}
+
+h2 {
+  text-align: center; /* Center-align heading */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #fe424d;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff6666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .row-cols-md-3 > .col {
+    flex: 1 1 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row-cols-md-3 > .col {
+    flex: 1 1 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Listing Details */
+.details-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.listing-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5733;
+}
+
+.location {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-edit {
+  background-color: #3498db;
+  color: white;
+  border: none;
+}
+
+.btn-edit:hover {
+  background-color: #217dbb;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.description-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.description-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Reviews Section */
+.review-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ff5733;
+}
+
+.reviewCard-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.reviewCard-text {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.btn-delete-sm {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.btn-delete-sm:hover {
+  background-color: #e63946;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .btn {
+      width: 100%;
+  }
+
+  .listing-title {
+      font-size: 1.7rem;
+  }
+
+  .review-card {
+      padding: 12px;
+  }
+}
+
+.reviewCard-body {
+  padding: 10px;
+}
+
+.reviewCard-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 5px;
+}
+
+.reviewCard-text {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.main-content {
+  flex: 1;
+}
